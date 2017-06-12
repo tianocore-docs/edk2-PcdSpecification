@@ -1,6 +1,5 @@
 {
   "variables" : {
-    "draft"   : "yes",
     "title"   : "EDK II Platform Configuration Database Infrastructure Description",
     "version" : "Revision 0.56"
   },
