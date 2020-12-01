@@ -1,0 +1,1367 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.4 Terms · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="15_conventions_used_in_this_document.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../#edk-ii-platform-configuration-database-infrastructure-description">
+            
+                    
+                    EDK II Platform Configuration Database Infrastructure Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./#1-introduction">
+            
+                    
+                    1 Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="./">
+            
+                <a href="./#11-scope">
+            
+                    
+                    1.1 Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="./">
+            
+                <a href="./#12-target-audience">
+            
+                    
+                    1.2 Target Audience
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="./">
+            
+                <a href="./#13-related-information">
+            
+                    
+                    1.3 Related Information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="14_terms.html">
+            
+                <a href="14_terms.html#14-terms">
+            
+                    
+                    1.4 Terms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="15_conventions_used_in_this_document.html">
+            
+                <a href="15_conventions_used_in_this_document.html#15-conventions-used-in-this-document">
+            
+                    
+                    1.5 Conventions Used in this Document
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="15_conventions_used_in_this_document.html">
+            
+                <a href="15_conventions_used_in_this_document.html#151-data-structure-descriptions">
+            
+                    
+                    1.5.1 Data Structure Descriptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="15_conventions_used_in_this_document.html">
+            
+                <a href="15_conventions_used_in_this_document.html#152-protocol-descriptions">
+            
+                    
+                    1.5.2 Protocol Descriptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="15_conventions_used_in_this_document.html">
+            
+                <a href="15_conventions_used_in_this_document.html#153-procedure-descriptions">
+            
+                    
+                    1.5.3 Procedure Descriptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="15_conventions_used_in_this_document.html">
+            
+                <a href="15_conventions_used_in_this_document.html#154-pseudo-code-conventions">
+            
+                    
+                    1.5.4 Pseudo-Code Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.5" data-path="15_conventions_used_in_this_document.html">
+            
+                <a href="15_conventions_used_in_this_document.html#155-typographic-conventions">
+            
+                    
+                    1.5.5 Typographic Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../2_pcd_protocol_definitions/">
+            
+                <a href="../2_pcd_protocol_definitions/#2-pcd-protocol">
+            
+                    
+                    2 PCD Protocol
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../2_pcd_protocol_definitions/pcdprotocol_setsku.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_setsku.html#pcd_protocolsetsku">
+            
+                    
+                    PCD_PROTOCOL.SetSku()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../2_pcd_protocol_definitions/pcdprotocol_get8.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_get8.html#pcd_protocolget8">
+            
+                    
+                    PCD_PROTOCOL.Get8()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../2_pcd_protocol_definitions/pcdprotocol_get16.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_get16.html#pcd_protocolget16">
+            
+                    
+                    PCD_PROTOCOL.Get16()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../2_pcd_protocol_definitions/pcdprotocol_get32.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_get32.html#pcd_protocolget32">
+            
+                    
+                    PCD_PROTOCOL.Get32()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../2_pcd_protocol_definitions/pcdprotocol_get64.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_get64.html#pcd_protocolget64">
+            
+                    
+                    PCD_PROTOCOL.Get64()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../2_pcd_protocol_definitions/pcdprotocol_getptr.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_getptr.html#pcd_protocolgetptr">
+            
+                    
+                    PCD_PROTOCOL.GetPtr()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../2_pcd_protocol_definitions/pcdprotocol_getbool.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_getbool.html#pcd_protocolgetbool">
+            
+                    
+                    PCD_PROTOCOL.GetBool()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../2_pcd_protocol_definitions/pcdprotocol_getsize.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_getsize.html#pcd_protocolgetsize">
+            
+                    
+                    PCD_PROTOCOL.GetSize()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../2_pcd_protocol_definitions/pcdprotocol_get8ex.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_get8ex.html#pcd_protocolget8ex">
+            
+                    
+                    PCD_PROTOCOL.Get8Ex()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../2_pcd_protocol_definitions/pcdprotocol_get16ex.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_get16ex.html#pcd_protocolget16ex">
+            
+                    
+                    PCD_PROTOCOL.Get16Ex()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../2_pcd_protocol_definitions/pcdprotocol_get32ex.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_get32ex.html#pcd_protocolget32ex">
+            
+                    
+                    PCD_PROTOCOL.Get32Ex()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../2_pcd_protocol_definitions/pcdprotocol_get64ex.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_get64ex.html#pcd_protocolget64ex">
+            
+                    
+                    PCD_PROTOCOL.Get64Ex()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../2_pcd_protocol_definitions/pcdprotocol_getptrex.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_getptrex.html#pcd_protocolgetptrex">
+            
+                    
+                    PCD_PROTOCOL.GetPtrEx()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../2_pcd_protocol_definitions/pcdprotocol_getboolex.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_getboolex.html#pcd_protocolgetboolex">
+            
+                    
+                    PCD_PROTOCOL.GetBoolEx()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../2_pcd_protocol_definitions/pcdprotocol_set8.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_set8.html#pcd_protocolset8">
+            
+                    
+                    PCD_PROTOCOL.Set8()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../2_pcd_protocol_definitions/pcdprotocol_set16.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_set16.html#pcd_protocolset16">
+            
+                    
+                    PCD_PROTOCOL.Set16()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../2_pcd_protocol_definitions/pcdprotocol_set32.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_set32.html#pcd_protocolset32">
+            
+                    
+                    PCD_PROTOCOL.Set32()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../2_pcd_protocol_definitions/pcdprotocol_set64.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_set64.html#pcd_protocolset64">
+            
+                    
+                    PCD_PROTOCOL.Set64()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="../2_pcd_protocol_definitions/pcdprotocol_setptr.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_setptr.html#pcd_protocolsetptr">
+            
+                    
+                    PCD_PROTOCOL.SetPtr()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="../2_pcd_protocol_definitions/pcdprotocol_setboolean.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_setboolean.html#pcd_protocolsetboolean">
+            
+                    
+                    PCD_PROTOCOL.SetBoolean()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="../2_pcd_protocol_definitions/pcdprotocol_set8ex.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_set8ex.html#pcd_protocolset8ex">
+            
+                    
+                    PCD_PROTOCOL.Set8Ex()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="../2_pcd_protocol_definitions/pcdprotocol_set16ex.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_set16ex.html#pcd_protocolset16ex">
+            
+                    
+                    PCD_PROTOCOL.Set16Ex()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="../2_pcd_protocol_definitions/pcdprotocol_set32ex.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_set32ex.html#pcd_protocolset32ex">
+            
+                    
+                    PCD_PROTOCOL.Set32Ex()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="../2_pcd_protocol_definitions/pcdprotocol_set64ex.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_set64ex.html#pcd_protocolset64ex">
+            
+                    
+                    PCD_PROTOCOL.Set64Ex()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="../2_pcd_protocol_definitions/pcdprotocol_setptrex.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_setptrex.html#pcd_protocolsetptrex">
+            
+                    
+                    PCD_PROTOCOL.SetPtrEx()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.26" data-path="../2_pcd_protocol_definitions/pcdprotocol_setboolex.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_setboolex.html#pcd_protocolsetboolex">
+            
+                    
+                    PCD_PROTOCOL.SetBoolEx()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.27" data-path="../2_pcd_protocol_definitions/pcdprotocol_callbackonset.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_callbackonset.html#pcd_protocolcallbackonset">
+            
+                    
+                    PCD_PROTOCOL.CallbackOnSet()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.28" data-path="../2_pcd_protocol_definitions/pcdprotocol_cancelcallback.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_cancelcallback.html#pcd_protocolcancelcallback">
+            
+                    
+                    PCD_PROTOCOL.CancelCallback()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.29" data-path="../2_pcd_protocol_definitions/pcdprotocol_getnexttoken.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_getnexttoken.html#pcd_protocolgetnexttoken">
+            
+                    
+                    PCD_PROTOCOL.GetNextToken()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.30" data-path="../2_pcd_protocol_definitions/pcdprotocol_getnexttokenspace.html">
+            
+                <a href="../2_pcd_protocol_definitions/pcdprotocol_getnexttokenspace.html#pcd_protocolgetnexttokenspace">
+            
+                    
+                    PCD_PROTOCOL.GetNextTokenSpace()
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../3_pcd_ppi_definitions/">
+            
+                <a href="../3_pcd_ppi_definitions/#3-pcd-ppi">
+            
+                    
+                    3 PCD PPI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../3_pcd_ppi_definitions/pcdppi_setsku.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_setsku.html#pcd_ppisetsku">
+            
+                    
+                    PCD_PPI.SetSku()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../3_pcd_ppi_definitions/pcdppi_get8.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_get8.html#pcd_ppiget8">
+            
+                    
+                    PCD_PPI.Get8()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../3_pcd_ppi_definitions/pcdppi_get16.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_get16.html#pcd_ppiget16">
+            
+                    
+                    PCD_PPI.Get16()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../3_pcd_ppi_definitions/pcdppi_get32.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_get32.html#pcd_ppiget32">
+            
+                    
+                    PCD_PPI.Get32()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../3_pcd_ppi_definitions/pcdppi_get64.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_get64.html#pcd_ppiget64">
+            
+                    
+                    PCD_PPI.Get64()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../3_pcd_ppi_definitions/pcdppi_getptr.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_getptr.html#pcd_ppigetptr">
+            
+                    
+                    PCD_PPI.GetPtr()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../3_pcd_ppi_definitions/pcdppi_getbool.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_getbool.html#pcd_ppigetbool">
+            
+                    
+                    PCD_PPI.GetBool()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../3_pcd_ppi_definitions/pcdppi_getsize.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_getsize.html#pcd_ppigetsize">
+            
+                    
+                    PCD_PPI.GetSize()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../3_pcd_ppi_definitions/pcdppi_get8ex.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_get8ex.html#pcd_ppiget8ex">
+            
+                    
+                    PCD_PPI.Get8Ex()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../3_pcd_ppi_definitions/pcdppi_get16ex.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_get16ex.html#pcd_ppiget16ex">
+            
+                    
+                    PCD_PPI.Get16Ex()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../3_pcd_ppi_definitions/pcdppi_get32ex.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_get32ex.html#pcd_ppiget32ex">
+            
+                    
+                    PCD_PPI.Get32Ex()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../3_pcd_ppi_definitions/pcdppi_get64ex.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_get64ex.html#pcd_ppiget64ex">
+            
+                    
+                    PCD_PPI.Get64Ex()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../3_pcd_ppi_definitions/pcdppi_getptrex.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_getptrex.html#pcd_ppigetptrex">
+            
+                    
+                    PCD_PPI.GetPtrEx()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../3_pcd_ppi_definitions/pcdppi_getboolex.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_getboolex.html#pcd_ppigetboolex">
+            
+                    
+                    PCD_PPI.GetBoolEx()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="../3_pcd_ppi_definitions/pcdppi_set8.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_set8.html#pcd_ppiset8">
+            
+                    
+                    PCD_PPI.Set8()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.16" data-path="../3_pcd_ppi_definitions/pcdppi_set16.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_set16.html#pcd_ppiset16">
+            
+                    
+                    PCD_PPI.Set16()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.17" data-path="../3_pcd_ppi_definitions/pcdppi_set32.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_set32.html#pcd_ppiset32">
+            
+                    
+                    PCD_PPI.Set32()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.18" data-path="../3_pcd_ppi_definitions/pcdppi_set64.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_set64.html#pcd_ppiset64">
+            
+                    
+                    PCD_PPI.Set64()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.19" data-path="../3_pcd_ppi_definitions/pcdppi_setptr.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_setptr.html#pcd_ppisetptr">
+            
+                    
+                    PCD_PPI.SetPtr()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.20" data-path="../3_pcd_ppi_definitions/pcdppi_setboolean.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_setboolean.html#pcd_ppisetboolean">
+            
+                    
+                    PCD_PPI.SetBoolean()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.21" data-path="../3_pcd_ppi_definitions/pcdppi_set8ex.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_set8ex.html#pcd_ppiset8ex">
+            
+                    
+                    PCD_PPI.Set8Ex()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.22" data-path="../3_pcd_ppi_definitions/pcdppi_set16ex.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_set16ex.html#pcd_ppiset16ex">
+            
+                    
+                    PCD_PPI.Set16Ex()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.23" data-path="../3_pcd_ppi_definitions/pcdppi_set32ex.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_set32ex.html#pcd_ppiset32ex">
+            
+                    
+                    PCD_PPI.Set32Ex()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.24" data-path="../3_pcd_ppi_definitions/pcdppi_set64ex.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_set64ex.html#pcd_ppiset64ex">
+            
+                    
+                    PCD_PPI.Set64Ex()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.25" data-path="../3_pcd_ppi_definitions/pcdppi_setptrex.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_setptrex.html#pcd_ppisetptrex">
+            
+                    
+                    PCD_PPI.SetPtrEx()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.26" data-path="../3_pcd_ppi_definitions/pcdppi_setboolex.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_setboolex.html#pcd_ppisetboolex">
+            
+                    
+                    PCD_PPI.SetBoolEx()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.27" data-path="../3_pcd_ppi_definitions/pcdppi_callbackonset.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_callbackonset.html#pcd_ppicallbackonset">
+            
+                    
+                    PCD_PPI.CallbackOnSet()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.28" data-path="../3_pcd_ppi_definitions/pcdppi_cancelcallback.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_cancelcallback.html#pcd_ppicancelcallback">
+            
+                    
+                    PCD_PPI.CancelCallback()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.29" data-path="../3_pcd_ppi_definitions/pcdppi_getnexttoken.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_getnexttoken.html#pcd_ppigetnexttoken">
+            
+                    
+                    PCD_PPI.GetNextToken()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.30" data-path="../3_pcd_ppi_definitions/pcdppi_getnexttokenspace.html">
+            
+                <a href="../3_pcd_ppi_definitions/pcdppi_getnexttokenspace.html#pcd_ppigetnexttokenspace">
+            
+                    
+                    PCD_PPI.GetNextTokenSpace()
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.4 Terms</a>
+    </h1>
+</div>
+<div>
+    <!-- 
+    <img style="float:left; align:middle; height:2em" src="media/TianocoreTitlePageLogo.jpg"/>
+     -->
+    
+      <h2>
+        <div style="position:absolute;text-align:left">EDK II Platform Configuration Database Infrastructure Description</div>
+        <div style="position:absolute;width:100%;text-align:center">DRAFT [12/01/2020 06:03:58]</div>
+        <div style="text-align:right">Revision 0.56</div>
+      </h2>  
+    
+    <hr>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <!--- @file
+  1.4 Terms
+
+  Copyright (c) 2009-2017, Intel Corporation. All rights reserved.<BR>
+
+  Redistribution and use in source (original document form) and 'compiled'
+  forms (converted to PDF, epub, HTML and other formats) with or without
+  modification, are permitted provided that the following conditions are met:
+
+  1) Redistributions of source code (original document form) must retain the
+     above copyright notice, this list of conditions and the following
+     disclaimer as the first lines of this file unmodified.
+
+  2) Redistributions in compiled form (transformed to other DTDs, converted to
+     PDF, epub, HTML and other formats) must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+
+  THIS DOCUMENTATION IS PROVIDED BY TIANOCORE PROJECT "AS IS" AND ANY EXPRESS OR
+  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+  EVENT SHALL TIANOCORE PROJECT  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF
+  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+<h2 id="14-terms">1.4 Terms</h2>
+<p>The following terms are used throughout this document to describe varying
+aspects of input localization:</p>
+<p><strong>BDS</strong></p>
+<p>Framework Boot Device Selection phase.</p>
+<p><strong>BNF</strong></p>
+<p>BNF is an acronym for &quot;Backus Naur Form.&quot; John Backus and Peter Naur introduced
+for the first time a formal notation to describe the syntax of a given language.</p>
+<p><strong>Component</strong></p>
+<p>An executable image. Components defined in this specification support one of
+the defined <em>module types</em>.</p>
+<p><strong>DXE</strong></p>
+<p>Framework Driver Execution Environment phase.</p>
+<p><strong>DXE SAL</strong></p>
+<p>Special class of DXE module that produces SAL Runtime Services. DXE SAL modules
+differ from DXE Runtime modules in that the DXE Runtime modules support Virtual
+mode OS calls at OS runtime and DXE SAL modules support intermixing Virtual or
+Physical mode OS calls.</p>
+<p><strong>DXE SMM</strong></p>
+<p>Special class of DXE module that is loaded into the System Management Mode
+memory.</p>
+<p><strong>DXE Runtime</strong></p>
+<p>Special class of DXE module that provides Runtime Services</p>
+<p><strong>EFI</strong></p>
+<p>Generic term that refers to one of the versions of the EFI specification:
+EFI .1.02, EFI 1.10, or UEFI 2.0.</p>
+<p><strong>EFI 1.10 Specification</strong></p>
+<p>The <em>Extensible Firmware Interface Specification</em> was published by Intel
+Corporation. Intel has donated the EFI specification to the Unified EFI Forum,
+and the UEFI now owns future updates of the EFI specification. See
+<em>UEFI Specification Version 2.0</em>.</p>
+<p><strong>Foundation</strong></p>
+<p>The set of code and interfaces that glue implementations of the Framework
+together.</p>
+<p><strong>Framework</strong></p>
+<p>Intel(R) Platform Innovation Framework for EFI consists of the Foundation, plus
+other modular components that characterize the portability surface for modular
+components designed to work on any implementation of the Framework architecture.</p>
+<p><strong>GUID</strong></p>
+<p>Globally Unique Identifier. A 128-bit value used to uniquely name entities. A
+unique GUID can be generated by an individual without the help of a centralized
+authority. This allows the generation of names that will never conflict, even
+among multiple, unrelated parties.</p>
+<p><strong>HII</strong></p>
+<p>Human Interface Infrastructure. This generally refers to the database that
+contains string, font, and IFR information along with other pieces that use one
+of the database components.</p>
+<p><strong>IFR</strong></p>
+<p>Internal Forms Representation. This is the binary encoding that is used for the
+representation of user interface pages.</p>
+<p><strong>Library Class</strong></p>
+<p>A library class defines the API or interface set for a library. The consumer
+of the library is coded to the library class definition. Library classes are
+defined via a library class .h file that is published by a package. See the EDK
+II Module Development Environment Library Specification for a list of libraries
+defined in this package.</p>
+<p><strong>Library Instance</strong></p>
+<p>An implementation of one or more library classes. See the <em>EDK II Module
+Development Environment Library Specification</em> for a list of libraries defined
+in this package.</p>
+<p><strong>Module</strong></p>
+<p>A module is either an executable image or a library instance. For a list of
+module types supported by this package, see Module Type.</p>
+<p><strong>Module Type</strong></p>
+<p>All libraries and components belong to one of the following module types:
+<code>BASE</code>, <code>SEC</code>, <code>PEI_CORE</code>, <code>PEIM</code>, <code>DXE_CORE</code>, <code>DXE_DRIVER</code>,
+<code>DXE_RUNTIME_DRIVER</code>, <code>DXE_SMM_DRIVER</code>, <code>DXE_SAL_DRIVER</code>, <code>UEFI_DRIVER</code>, or
+<code>UEFI_APPLICATION</code>. These definitions provide a framework that is consistent
+with a similar set of requirements. A module that is of module type <code>BASE</code>,
+depends only on headers and libraries provided in the MDE, while a module that
+is of module type <code>DXE_DRIVER</code> depends on common DXE components. For a
+definition of the various module types, see Module Type.</p>
+<p><strong>Module Surface Area (MSA)</strong></p>
+<p>The MSA is an XML description of how the module is coded. The MSA contains
+information about the different construction options for the module. After the
+module is constructed the MSA can describe the interoperability requirements of
+a module.</p>
+<p><strong>Package</strong></p>
+<p>A package is a container. It can hold a collection of files for any given set
+of modules. Packages may be described as one of the following types of modules:</p>
+<ul>
+<li><p>Source modules, containing all source files and descriptions of a module</p>
+</li>
+<li><p>Binary modules, containing EFI Sections or a Framework File System and a
+description file specific to linking and binary editing of features and
+attributes specified in a Platform Configuration Database (PCD)</p>
+</li>
+<li><p>Mixed modules, with both binary and source modules</p>
+</li>
+</ul>
+<p>Multiple modules can be combined into a package, and multiple packages can be
+combined into a single package.</p>
+<p><strong>Protocol</strong></p>
+<p>An API named by a GUID as defined by the EFI specification.</p>
+<p><strong>PCD</strong></p>
+<p>Platform Configuration Database.</p>
+<p><strong>PEI</strong></p>
+<p>Pre-EFI Initialization Phase.</p>
+<p><strong>PPI</strong></p>
+<p>A PEIM-to-PEIM Interface that is named by a GUID as defined by the PEI CIS.</p>
+<p><strong>SAL</strong></p>
+<p>System Abstraction Layer. A firmware interface specification used on Intel(R)
+Itanium(R) Processor based systems.</p>
+<p><strong>Runtime Services</strong></p>
+<p>Interfaces that provide access to underlying platform-specific hardware that
+might be useful during OS runtime, such as time and date services. These
+services become active during the boot process but also persist after the OS
+loader terminates boot services.</p>
+<p><strong>SEC</strong></p>
+<p>Security Phase is the code in the Framework that contains the processor reset
+vector and launches PEI. This phase is separate from PEI because some security
+schemes require ownership of the reset vector.</p>
+<p><strong>UEFI Application</strong></p>
+<p>An application that follows the UEFI specification. The only difference between
+a UEFI application and a UEFI driver is that an application is unloaded from
+memory when it exits regardless of return status, while a driver that returns a
+successful return status is not unloaded when its entry point exits.</p>
+<p><strong>UEFI Driver</strong></p>
+<p>A driver that follows the UEFI specification.</p>
+<p><strong>UEFI Specification Version 2.0</strong></p>
+<p>Current version of the EFI specification released by the Unified EFI Forum.
+This specification builds on the EFI 1.10 specification and transfers ownership
+of the EFI specification from Intel to a non-profit, industry trade
+organization.</p>
+<p><strong>Unified EFI Forum</strong></p>
+<p>A non-profit collaborative trade organization formed to promote and manage the
+UEFI standard. For more information, see <a href="http://www.uefi.org" target="_blank">http://www.uefi.org</a>.</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                    
+                    
+
+<div>
+    <hr>
+    
+      <h2>
+        <div style="position:absolute;text-align:left">EDK II Platform Configuration Database Infrastructure Description</div>
+        <div style="position:absolute;width:100%;text-align:center">DRAFT [12/01/2020 06:03:58]</div>
+        <div style="text-align:right">Revision 0.56</div>
+      </h2>  
+    
+</div>
+
+
+
+                
+            </div>
+
+            
+                
+                <a href="./#13-related-information" class="navigation navigation-prev " aria-label="Previous page: 1.3 Related Information">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="15_conventions_used_in_this_document.html#15-conventions-used-in-this-document" class="navigation navigation-next " aria-label="Next page: 1.5 Conventions Used in this Document">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.4 Terms","level":"1.2.4","depth":2,"next":{"title":"1.5 Conventions Used in this Document","level":"1.2.5","depth":2,"anchor":"#15-conventions-used-in-this-document","path":"1_introduction/15_conventions_used_in_this_document.md","ref":"1_introduction/15_conventions_used_in_this_document.md#15-conventions-used-in-this-document","articles":[{"title":"1.5.1 Data Structure Descriptions","level":"1.2.5.1","depth":3,"anchor":"#151-data-structure-descriptions","path":"1_introduction/15_conventions_used_in_this_document.md","ref":"1_introduction/15_conventions_used_in_this_document.md#151-data-structure-descriptions","articles":[]},{"title":"1.5.2 Protocol Descriptions","level":"1.2.5.2","depth":3,"anchor":"#152-protocol-descriptions","path":"1_introduction/15_conventions_used_in_this_document.md","ref":"1_introduction/15_conventions_used_in_this_document.md#152-protocol-descriptions","articles":[]},{"title":"1.5.3 Procedure Descriptions","level":"1.2.5.3","depth":3,"anchor":"#153-procedure-descriptions","path":"1_introduction/15_conventions_used_in_this_document.md","ref":"1_introduction/15_conventions_used_in_this_document.md#153-procedure-descriptions","articles":[]},{"title":"1.5.4 Pseudo-Code Conventions","level":"1.2.5.4","depth":3,"anchor":"#154-pseudo-code-conventions","path":"1_introduction/15_conventions_used_in_this_document.md","ref":"1_introduction/15_conventions_used_in_this_document.md#154-pseudo-code-conventions","articles":[]},{"title":"1.5.5 Typographic Conventions","level":"1.2.5.5","depth":3,"anchor":"#155-typographic-conventions","path":"1_introduction/15_conventions_used_in_this_document.md","ref":"1_introduction/15_conventions_used_in_this_document.md#155-typographic-conventions","articles":[]}]},"previous":{"title":"1.3 Related Information","level":"1.2.3","depth":2,"anchor":"#13-related-information","path":"1_introduction/README.md","ref":"1_introduction/README.md#13-related-information","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"draft":"yes","title":"EDK II Platform Configuration Database Infrastructure Description","version":"Revision 0.56"},"plugins":["puml-aleung"],"pluginsConfig":{"puml-aleung":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1_introduction/14_terms.md","mtime":"2020-12-01T06:03:26.206Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-01T06:03:58.342Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
